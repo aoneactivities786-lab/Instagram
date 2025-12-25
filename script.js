@@ -1,4 +1,4 @@
-const message = "Ab jab tumne Instagram deactivate kar hi diya hai, toh khud par focus karna. Be consistent in your work and your goals. Yeh waqt tumhare liye bahut bada change layega. I'm always here to support you. Chak de phatte!";
+const message = "Ab jab tune Instagram deactivate kar hi diya hai, toh khud par focus karna. Honista use krta hai bhai tu to message dekhega to pta bhi kaise chalegaaaa mekooooo. Dekh le lala teraaa hi time haiii. Mainnn teree saath hi hu beee . Chak de phatte!";
 
 function openLetter() {
     document.getElementById('letter').classList.add('open');
