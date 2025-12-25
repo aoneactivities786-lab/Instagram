@@ -1,0 +1,106 @@
+:root {
+    --primary: #ff7eb9;
+    --secondary: #ffafbd;
+    --paper: #fff9e6;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+.container { position: relative; }
+
+/* Envelope Styling */
+.envelope-wrapper {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.envelope {
+    position: relative;
+    width: 280px;
+    height: 180px;
+    background: var(--primary);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.flap {
+    position: absolute;
+    top: 0;
+    border-left: 140px solid transparent;
+    border-right: 140px solid transparent;
+    border-top: 100px solid #e7549a;
+    transition: transform 0.4s ease;
+    transform-origin: top;
+    z-index: 3;
+}
+
+.envelope-wrapper:hover .flap {
+    transform: rotateX(180deg);
+}
+
+.text {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    z-index: 2;
+}
+
+/* Letter Styling */
+.letter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 320px;
+    height: 450px;
+    background: var(--paper);
+    padding: 30px;
+    box-shadow: 0 0 50px rgba(0,0,0,0.3);
+    z-index: 10;
+    transition: 0.5s ease-in-out;
+    border: 2px solid #f1e5c2;
+    border-radius: 5px;
+}
+
+.letter.open { transform: translate(-50%, -50%) scale(1); }
+
+.title {
+    font-family: 'Dancing Script', cursive;
+    color: #d4145a;
+    font-size: 2rem;
+}
+
+#typewriter {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+.footer {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #d4145a;
+}
+
+.close-btn {
+    margin-top: 20px;
+    background: #ff7eb9;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
