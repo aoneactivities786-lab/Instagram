@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Letter for Kunal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="envelope-wrapper" onclick="openLetter()">
+            <div class="envelope">
+                <div class="flap"></div>
+                <div class="body"></div>
+                <div class="text">Tap to Open</div>
+            </div>
+        </div>
+
+        <div class="letter" id="letter">
+            <h1 class="title">Dear Kunal,</h1>
+            <div class="message-container">
+                <p id="typewriter"></p>
+            </div>
+            <div class="footer">
+                <p>Best of Luck! ✨</p>
+                <p class="signature">- Your Well-wisher</p>
+            </div>
+            <button class="close-btn" onclick="closeLetter()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
